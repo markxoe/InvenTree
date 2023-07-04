@@ -1104,6 +1104,13 @@ class InvenTreeSetting(BaseInvenTreeSetting):
             'validator': bool,
         },
 
+        'BARCODE_WEBCAM_AUTOENABLE': {
+            'name': _('Barcode Webcam Auto-Enable'),
+            'description': _('Automatically enable the webcam when opening barcode scanner modal'),
+            'default': False,
+            'validator': bool,
+        },
+
         'PART_ENABLE_REVISION': {
             'name': _('Part Revisions'),
             'description': _('Enable revision field for Part'),

@@ -120,6 +120,10 @@ function onCameraAvailable(hasCamera, options) {
                 onBarcodeScanCompleted(decodedResult.result, options);
             };
             $('#barcode_scan_btn').show();
+
+            if (global_settings.BARCODE_WEBCAM_AUTOENABLE) {
+                startQrScanner();
+            }
         }
     }
 }
